@@ -33,11 +33,6 @@ public class Main {
         meBeforeYou.displaysFile();
         System.out.println("Duration time: "+ meBeforeYou.getDurationTime()+"\n");
 
-        TimeCalculator calculator = new TimeCalculator();
-        calculator.includesMovie(lovieRosie);
-        calculator.includesMovie(meBeforeYou);
-        System.out.println("Total time to watch your entire list of favorite movies: " + calculator.getTotalTime()+"\n");
-
 
         Serie suits = new Serie();
         suits.setName("Suits");
@@ -55,6 +50,12 @@ public class Main {
         suits.displaysFile();
         System.out.println("Duration to marathon Suits: "+ suits.getDurationTime()+"\n");
 
+
+        TimeCalculator calculator = new TimeCalculator();
+        calculator.includes(lovieRosie);
+        calculator.includes(meBeforeYou);
+        calculator.includes(suits);
+        System.out.println("Total time to watch your entire list of favorite: " + calculator.getTotalTime()+"\n");
 
     }
 }

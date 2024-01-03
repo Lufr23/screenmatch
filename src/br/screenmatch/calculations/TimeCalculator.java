@@ -1,6 +1,8 @@
 package br.screenmatch.calculations;
 
 import br.screenmatch.model.Movie;
+import br.screenmatch.model.Serie;
+import br.screenmatch.model.Title;
 
 
 public class TimeCalculator {
@@ -11,7 +13,7 @@ public class TimeCalculator {
     }
 
 
-    public void includesMovie(Movie movie){
-        totalTime += movie.getDurationTime();
+    public void includes(Title title){
+        totalTime += title.getDurationTime();
     }
 }
