@@ -1,5 +1,7 @@
 
+import br.screenmatch.calculations.RecommendationFilter;
 import br.screenmatch.calculations.TimeCalculator;
+import br.screenmatch.model.Episode;
 import br.screenmatch.model.Movie;
 import br.screenmatch.model.Serie;
 
@@ -9,7 +11,6 @@ public class Main {
         lovieRosie.setName("Lovie Rosie");
         lovieRosie.setReleaseYear(2014);
         lovieRosie.setDurationTime(102);
-
 
         lovieRosie.evaluation(10);
         lovieRosie.evaluation(7);
@@ -24,7 +25,6 @@ public class Main {
         meBeforeYou.setReleaseYear(2016);
         meBeforeYou.setDurationTime(110);
 
-
         meBeforeYou.evaluation(10);
         meBeforeYou.evaluation(7);
         meBeforeYou.evaluation(5);
@@ -32,7 +32,6 @@ public class Main {
         meBeforeYou.averageHandle();
         meBeforeYou.displaysFile();
         System.out.println("Duration time: "+ meBeforeYou.getDurationTime()+"\n");
-
 
         Serie suits = new Serie();
         suits.setName("Suits");
@@ -46,16 +45,23 @@ public class Main {
         suits.evaluation(8);
         suits.evaluation(9);
 
-
         suits.displaysFile();
         System.out.println("Duration to marathon Suits: "+ suits.getDurationTime()+"\n");
-
 
         TimeCalculator calculator = new TimeCalculator();
         calculator.includes(lovieRosie);
         calculator.includes(meBeforeYou);
         calculator.includes(suits);
         System.out.println("Total time to watch your entire list of favorite: " + calculator.getTotalTime()+"\n");
+
+        RecommendationFilter filter = new RecommendationFilter();
+        filter.filter(lovieRosie);
+
+        Episode episode = new Episode();
+        episode.setNumber(1);
+        episode.setSerie(suits);
+        episode.setTotalViews(425);
+        filter.filter(episode);
 
     }
 }

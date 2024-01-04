@@ -15,6 +15,6 @@ public class Movie extends Title implements Classifications {
 
     @Override
     public int getClassification() {
-        return 0;
+        return (int) averageHandle()/2;
     }
 }
