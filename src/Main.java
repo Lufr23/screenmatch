@@ -9,9 +9,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Movie lovieRosie = new Movie();
-        lovieRosie.setName("Lovie Rosie");
-        lovieRosie.setReleaseYear(2014);
+        Movie lovieRosie = new Movie("Lovie Rosie", 2014);
         lovieRosie.setDurationTime(102);
 
         lovieRosie.evaluation(10);
@@ -22,9 +20,7 @@ public class Main {
         lovieRosie.displaysFile();
         System.out.println("Duration time: "+ lovieRosie.getDurationTime()+"\n");
 
-        Movie meBeforeYou = new Movie();
-        meBeforeYou.setName("Me before you");
-        meBeforeYou.setReleaseYear(2016);
+        Movie meBeforeYou = new Movie("Me before you",2016);
         meBeforeYou.setDurationTime(110);
 
         meBeforeYou.evaluation(10);
@@ -35,10 +31,8 @@ public class Main {
         meBeforeYou.displaysFile();
         System.out.println("Duration time: "+ meBeforeYou.getDurationTime()+"\n");
 
-        Serie suits = new Serie();
-        suits.setName("Suits");
+        Serie suits = new Serie("Suits",2011);
         suits.setEpisodesPerSeason(22);
-        suits.setReleaseYear(2011);
         suits.setMinutesPerEpisodes(44);
         suits.setSeason(8);
         suits.setAtiva(true);

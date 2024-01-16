@@ -7,6 +7,11 @@ public class Serie extends Title {
     private boolean ativa;
     private int minutesPerEpisodes;
 
+    public Serie(String name, int releaseYear) {
+        super(name, releaseYear);
+    }
+
+
     public int getSeason() {
         return season;
     }
@@ -27,19 +32,11 @@ public class Serie extends Title {
         this.episodesPerSeason = episodesPerSeason;
     }
 
-    public boolean isAtiva() {
-        return ativa;
-    }
-
     public void setAtiva(boolean ativa) {
         this.ativa = ativa;
     }
 
-    public int getMinutesPerEpisodes() {
-        return minutesPerEpisodes;
-    }
-
-    public void setMinutesPerEpisodes(int minutesPerEpisodes) {
+      public void setMinutesPerEpisodes(int minutesPerEpisodes) {
         this.minutesPerEpisodes = minutesPerEpisodes;
     }
 
