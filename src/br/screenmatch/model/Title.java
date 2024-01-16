@@ -9,6 +9,9 @@ public class Title {
     private int durationTime;
 
 
+    public String getName() {
+        return name;
+    }
 
     public void displaysFile(){
         System.out.println("Title: "+ name );
@@ -23,6 +26,10 @@ public class Title {
     }
     public int getDurationTime() {
         return durationTime;
+    }
+
+    public int getReleaseYear() {
+        return releaseYear;
     }
 
     public void setName(String name) {

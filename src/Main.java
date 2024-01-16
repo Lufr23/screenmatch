@@ -5,6 +5,8 @@ import br.screenmatch.model.Episode;
 import br.screenmatch.model.Movie;
 import br.screenmatch.model.Serie;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Movie lovieRosie = new Movie();
@@ -21,7 +23,7 @@ public class Main {
         System.out.println("Duration time: "+ lovieRosie.getDurationTime()+"\n");
 
         Movie meBeforeYou = new Movie();
-        meBeforeYou.setName("Lovie Rosie");
+        meBeforeYou.setName("Me before you");
         meBeforeYou.setReleaseYear(2016);
         meBeforeYou.setDurationTime(110);
 
@@ -63,5 +65,11 @@ public class Main {
         episode.setTotalViews(425);
         filter.filter(episode);
 
+        ArrayList<Movie> movieList = new ArrayList<>();
+        movieList.add(lovieRosie);
+        movieList.add(meBeforeYou);
+        System.out.println("List size: " + movieList.size());
+        System.out.println("First movie: "+ movieList.get(0).getName());
+        System.out.println(movieList);
     }
 }
