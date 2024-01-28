@@ -16,6 +16,11 @@ public class Serie extends Title {
         return season;
     }
 
+    public String toString(){
+        return "Serie: " + this.getName() + "(" + getReleaseYear() + ")";
+    }
+
+
     public int getDurationTime(){
         return season*episodesPerSeason*minutesPerEpisodes;
     }
