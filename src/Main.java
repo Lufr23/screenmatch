@@ -7,6 +7,8 @@ import br.screenmatch.model.Serie;
 import br.screenmatch.model.Title;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -58,7 +60,7 @@ public class Main {
         episode.setNumber(1);
         episode.setSerie(suits);
         episode.setTotalViews(425);
-        filter.filter(episode);
+       // filter.filter(episode);
 
         ArrayList<Title> titleList = new ArrayList<>();
         titleList.add(lovieRosie);
@@ -71,8 +73,10 @@ public class Main {
             System.out.println(item);
             if (item instanceof Movie movie && movie.getClassification()>2) {
                 System.out.println("Classification: " + movie.getClassification());
-                ;
             }
         }
+
+        System.out.println("After the ordenation");
+        Collections.sort(titleList);
     }
 }
