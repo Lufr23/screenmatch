@@ -63,9 +63,9 @@ public class Main {
        // filter.filter(episode);
 
         ArrayList<Title> titleList = new ArrayList<>();
+        titleList.add(suits);
         titleList.add(lovieRosie);
         titleList.add(meBeforeYou);
-        titleList.add(suits);
         System.out.println("List size: " + titleList.size());
         System.out.println("First movie: " + titleList.get(0).getName() + "\n");
 
@@ -78,5 +78,6 @@ public class Main {
 
         System.out.println("After the ordenation");
         Collections.sort(titleList);
+        System.out.println(titleList);
     }
 }

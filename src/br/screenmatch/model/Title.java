@@ -1,6 +1,7 @@
 package br.screenmatch.model;
-import br.screenmatch.model.compareTo;
-public class Title implements compareTo {
+
+public class Title implements Comparable<Title> {
+
     private String name;
     private int releaseYear;
     private boolean includedInThePlan;
@@ -11,11 +12,6 @@ public class Title implements compareTo {
     public Title(String name, int releaseYear) {
         this.name = name;
         this.releaseYear = releaseYear;
-    }
-
-    @Override
-    public String getName() {
-        return name;
     }
 
     public void displaysFile(){
@@ -52,6 +48,10 @@ public class Title implements compareTo {
     public void evaluation(int note){
         sumEvaluation += note;
         totalEvaluation++;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public double averageHandle(){
