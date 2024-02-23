@@ -1,6 +1,6 @@
-package br.screenmatch.model;
+package br.screenmatch.Model;
 
-import br.screenmatch.calculations.Classifications;
+import br.screenmatch.Calculations.Classifications;
 
 public class Episode implements Classifications {
     private int numero;

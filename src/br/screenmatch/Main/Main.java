@@ -1,10 +1,11 @@
+package br.screenmatch.Main;
 
-import br.screenmatch.calculations.RecommendationFilter;
-import br.screenmatch.calculations.TimeCalculator;
-import br.screenmatch.model.Episode;
-import br.screenmatch.model.Movie;
-import br.screenmatch.model.Serie;
-import br.screenmatch.model.Title;
+import br.screenmatch.Calculations.RecommendationFilter;
+import br.screenmatch.Calculations.TimeCalculator;
+import br.screenmatch.Model.Episode;
+import br.screenmatch.Model.Movie;
+import br.screenmatch.Model.Serie;
+import br.screenmatch.Model.Title;
 
 import java.util.ArrayList;
 import java.util.Collection;

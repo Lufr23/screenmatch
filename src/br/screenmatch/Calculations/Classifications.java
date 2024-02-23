@@ -1,4 +1,4 @@
-package br.screenmatch.calculations;
+package br.screenmatch.Calculations;
 
 public interface Classifications {
     int getClassification();

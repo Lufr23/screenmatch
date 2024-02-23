@@ -1,4 +1,4 @@
-package br.screenmatch.model;
+package br.screenmatch.Model;
 
 public class Serie extends Title {
 
@@ -27,10 +27,6 @@ public class Serie extends Title {
 
     public void setSeason(int season) {
         this.season = season;
-    }
-
-    public int getEpisodesPerSeason() {
-        return episodesPerSeason;
     }
 
     public void setEpisodesPerSeason(int episodesPerSeason) {

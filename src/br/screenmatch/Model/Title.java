@@ -1,4 +1,4 @@
-package br.screenmatch.model;
+package br.screenmatch.Model;
 
 public class Title implements Comparable<Title> {
 
