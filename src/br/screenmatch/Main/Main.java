@@ -8,7 +8,6 @@ import br.screenmatch.Model.Serie;
 import br.screenmatch.Model.Title;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class Main {
